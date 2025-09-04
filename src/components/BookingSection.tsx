@@ -76,16 +76,11 @@ const BookingSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
+                    <Label htmlFor="firstName">Name</Label>
                     <Input id="firstName" placeholder="Your first name" />
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Your last name" />
-                  </div>
-                </div>
+                 
 
                 <div className="space-y-2">
                   <Label htmlFor="email">Student Email</Label>
@@ -102,7 +97,6 @@ const BookingSection = () => {
                       <SelectContent>
                         <SelectItem value="in-person">In-Person (Campus)</SelectItem>
                         <SelectItem value="virtual">Virtual (Online)</SelectItem>
-                        <SelectItem value="phone">Phone Call</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -133,15 +127,7 @@ const BookingSection = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="concerns">What would you like to discuss? (Optional)</Label>
-                  <Input 
-                    id="concerns" 
-                    placeholder="Brief description of your concerns..."
-                    className="h-20"
-                  />
-                </div>
-
+               
                 <div className="bg-muted/50 p-4 rounded-lg">
                   <div className="flex items-start gap-3">
                     <Shield className="w-5 h-5 text-primary mt-0.5" />
